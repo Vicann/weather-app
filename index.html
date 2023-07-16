@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 3</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" type="text/css" href="src/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <body>
+    <div class="cointainer"></div>
+    <div class="weather-app">
+            <form class="search-form">
+                <div class="row">
+                    <div class = col-9">
+              <input
+                type="search"
+                id = "citySearch"
+                placeholder="Type a city..."
+                autofocus="on"
+                autocomplete="off"
+                class="form-control"
+              />
+              </div>
+              <div class ="col-3">
+              <input type="submit" value="Search" class="form-control btn btn-primary" 
+              />
+              <buttonid id = "current" type="button" class="btn btn-success">Current</button>
+
+              </div>
+              </div>
+            </form>
+            <h1 class="city">Boston, Massachusetts</h1>
+            <ul>
+              <li id="date">Friday 11:00</li>
+              <li id = "weather-description">Partly Cloudy</li>
+            </ul>
+            <div class="row">
+              <div class="col-6">
+                <img
+                  class="weather-icon"
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Cloudy icon"
+                />
+                <span class="temperature" id="temperature">12 </span ><a href = "#" id = "celsius-link">°C </a><span class = "units">| <a href="#"><a href="#" id ="fahrenheit-link">°F</a></a></span>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li id = "humidity">Humidity: 60%</li>
+                  <li id = "wind">Wind: 8 km/h</li>
+                </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+  </body>
+<script src="src/script.js"></script>
+</html>
